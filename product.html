@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZPlus SBA-1 Helmet - ZPlus Pvt. Ltd</title>
+    <link rel="stylesheet" href="styling/style.css">
+    <link rel="stylesheet" href="styling/product.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation (same as index.html) -->
+    
+    <div class="product-container">
+        <!-- Breadcrumb -->
+        <div class="breadcrumb">
+            <a href="index.html">Home</a> > 
+            <a href="#helmets">Helmets</a> > 
+            <span>Urban Commuter Helmet</span>
+        </div>
+
+        <!-- Product Layout -->
+        <div class="product-layout">
+            <!-- Left Column - Images -->
+            <div class="product-images">
+                <div class="main-image">
+                    <img src="productpicture/urban.jpeg" alt="Urban Commuter Helmet" id="mainImage">
+                </div>
+                <div class="image-gallery">
+                    <img src="productpicture/urban.jpeg" alt="Black" onclick="changeImage('productpicture/urban.jpeg')">
+                    <img src="productpicture/urban2.jpeg" alt="Black Blue" onclick="changeImage('productpicture/urban2.jpeg')">
+                </div>
+            </div>
+
+            <!-- Middle Column - Product Info -->
+            <div class="product-info">
+                <h1>Z+ Urban Commuter Helmet</h1>
+                <div class="brand">Brand: <a href="#steelbird">Z+</a></div>
+                
+                <div class="rating">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#reviews">19,680 ratings</a>
+                </div>
+
+                <div class="price-box">
+                    <div class="price">
+                        <span class="currency">₹</span>
+                        <span class="amount" id="price">3699.00</span>
+                    </div>
+                    <div class="tax-info">Inclusive of all taxes</div>
+                </div>
+
+                <div class="offers">
+                    <h3>Available Offers</h3>
+                    <ul>
+                        <li><i class="fas fa-tag"></i> Bank Offer: 5% Cashback on Axis Bank Cards</li>
+                        <li><i class="fas fa-tag"></i> Partner Offer: Get GST Invoice & Save up to 28%</li>
+                    </ul>
+                </div>
+
+                <!-- Color Selection -->
+                <div class="color-selection">
+                    <h3>Colour:</h3>
+                    <div class="color-options">
+                        <div class="color-option" style="background-color: black;" onclick="changeImage('productpicture/urban.jpeg')"></div>
+                        <div class="color-option" style="background-color: blue;" onclick="changeImage('productpicture/urban2.jpeg')"></div>
+                    </div>
+                </div>
+
+                <!-- Size Selection -->
+                <div class="size-selection">
+                    <h3>Size:</h3>
+                    <div class="size-options">
+                        <button class="size-btn active">M</button>
+                        <button class="size-btn">L</button>
+                    </div>
+                    <a href="#size-chart" class="size-chart">Size Chart</a>
+                </div>
+            </div>
+
+            <!-- Right Column - Buy Box -->
+            <div class="buy-box">
+                <div class="price">₹<span id="total-price">2699</span></div>
+                <div class="delivery"><i class="fas fa-truck"></i> FREE delivery by Monday, 3 February</div>
+                <div class="stock"><i class="fas fa-check"></i> In stock</div>
+                <div class="quantity">
+                    <label>Quantity:</label>
+                    <select id="quantity" onchange="updatePrice()">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+                <button class="btn-add-cart">Add to Cart</button>
+                <button class="btn-buy-now">Buy Now</button>
+                <div class="secure"><i class="fas fa-lock"></i> Secure transaction</div>
+                <div class="sold-by">Sold by Gale Pvt. Ltd</div>
+            </div>
+        </div>
+
+        <!-- Customer Reviews -->
+        <div class="customer-reviews">
+            <h2>Customer Reviews</h2>
+            <div class="review-summary">
+                <div class="rating-box">
+                    <div class="average">4.5</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="total">19,680 ratings</div>
+                </div>
+                <div class="new-review">
+                    <h3>Write a Review</h3>
+                    <textarea placeholder="Share your thoughts..."></textarea>
+                    <button>Submit Review</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function changeImage(imageSrc) {
+            document.getElementById('mainImage').src = imageSrc;
+        }
+        
+        function updatePrice() {
+            let pricePerUnit = 2699;
+            let quantity = document.getElementById("quantity").value;
+            let totalPrice = pricePerUnit * quantity;
+            document.getElementById("total-price").innerText = totalPrice;
+        }
+    </script>
+</body>
+</html>

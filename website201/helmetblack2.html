@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Helmet</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #fffafa;
+            background: url('https://i.pinimg.com/736x/c2/d4/ef/c2d4ef5ab857b877a6073b6007f65678.jpg') no-repeat center center/cover; 
+        }
+
+        header {
+            background-color: #333;
+            color: rgb(255, 255, 255);
+            padding: 15px;
+            text-align: center;
+        }
+
+        .product-container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: rgb(131, 130, 130);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .product-image {
+            flex: 1;
+            min-width: 300px;
+            text-align: center;
+        }
+
+        .product-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .product-details {
+            flex: 2;
+            min-width: 300px;
+        }
+
+        .product-details h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .product-details p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .reviews {
+            margin-top: 20px;
+        }
+
+        .reviews h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .review {
+            background-color: #000000;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .review strong {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .review p {
+            font-size: 14px;
+            margin: 5px 0 0;
+        }
+
+        .buy-options {
+            margin-top: 30px;
+        }
+
+        .buy-button {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .buy-button:hover {
+            background-color: #218838;
+        }
+
+        .price {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Zen Plus - Product Details</h1>
+    </header>
+
+    <div class="product-container">
+        <!-- Product Image -->
+        <div class="product-image">
+            <img src="White.jpg" alt="Helmet">
+        </div>
+
+        <!-- Product Details -->
+        <div class="product-details">
+            <h1> BLACK & WHITE</h1>
+            <p>
+                Experience the ultimate in safety and style with our Premium Racing Helmet. Designed for high-performance riders,
+                this helmet offers unmatched durability, aerodynamic design, and maximum comfort for long rides.
+            </p>
+            <p>
+                Features:
+                <ul>
+                    <li>Aerodynamic shell for reduced wind resistance</li>
+                    <li>Comfortable inner padding with anti-bacterial lining</li>
+                    <li>Advanced ventilation system for a cool ride</li>
+                    <li>DOT and ECE certified for safety</li>
+                </ul>
+            </p>
+
+            <!-- Price and Buy Button -->
+            <div class="buy-options">
+                <p class="price"> &#8377; 2399/-</p>
+                <button class="buy-button" onclick="buyNow()">Buy Now</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Reviews Section -->
+    <div class="product-container">
+        <div class="reviews">
+            <h3>Customer Reviews</h3>
+
+            <div class="review">
+                <strong>John Doe</strong>
+                <p>"Fantastic helmet! Fits perfectly and feels incredibly sturdy. Highly recommended!"</p>
+            </div>
+
+            <div class="review">
+                <strong>Jane Smith</strong>
+                <p>"Stylish and comfortable. The ventilation system is a game-changer for summer rides."</p>
+            </div>
+
+            <div class="review">
+                <strong>Mike Johnson</strong>
+                <p>"Worth every penny. The safety certifications gave me peace of mind."</p>
+            </div>
+            <div class="feedback-form">
+                <h3>Leave Your Feedback</h3>
+                <textarea placeholder="Write your review here..."></textarea>
+                <br>
+                <button onclick="submitFeedback()">Submit Feedback</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function buyNow() {
+            alert("Thank you for your purchase! Your order has been placed.");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zen Plus - Premium Helmets</title>
+    <link rel="stylesheet" href="styling/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script defer src="scripts/script.js"></script>
+    <style>
+        .register-btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 4px;
+            text-decoration: none;
+            margin-left: 15px;
+            transition: background-color 0.3s;
+        }
+        
+        .register-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Zen Plus</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a>Products</a></li>
+            <li><a href="#coupons">Coupons</a></li>
+            <li><a href="footer/contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-icons">
+            <a href="#search"><i class="fas fa-search"></i></a>
+            <a href="#wishlist"><i class="fas fa-heart"></i><span>0</span></a>
+            <a href="#cart"><i class="fas fa-shopping-cart"></i><span>0</span></a>
+            <a href="register.html" class="register-btn">Register</a>
+        </div>
+    </nav>
+
+ 
+
+    <!-- Slideshow Section -->
+    <div class="slideshow-container">
+        <div class="slide active">
+            <img src="slideshow/1.jpeg" alt="Slide 1">
+        </div>
+        <div class="slide">
+            <img src="slideshow/2.jpeg" alt="Slide 2">
+        </div>
+        <div class="slide">
+            <img src="slideshow/3.jpeg" alt="Slide 3">
+        </div>
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+        <div class="dots-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+    
+    <!-- Featured Collection -->
+    <section class="features">
+        <div class="feature">
+            <i class="fas fa-truck"></i>
+            <h3>Free Delivery</h3>
+            <p>On orders above ₹1400</p>
+        </div>
+        <div class="feature">
+            <i class="fas fa-undo"></i>
+            <h3>Easy Returns</h3>
+            <p>30-day return policy</p>
+        </div>
+        <div class="feature">
+            <i class="fas fa-shield-alt"></i>
+            <h3>Quality Assured</h3>
+            <p>DOT & ECE certified</p>
+        </div>
+        <div class="feature">
+            <i class="fas fa-headset"></i>
+            <h3>24/7 Support</h3>
+            <p>Expert assistance</p>
+        </div>
+    </section>
+
+    <section class="products">
+        <h2>Featured Collections</h2>
+        <div class="product-grid"></div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>+91-8302524675</p>
+                <p>ZenPlus.help@gmail.com</p>
+                <p>Jodhpur, Rajasthan, 342013</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="footer/about-us.html">About Us</a></li>
+                    <li><a href="footer/privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="footer/contact.html">Contact</a></li>
+                    <li><a href="footer/terms-conditions.html">Terms & Condition</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Zen Plus All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shield style</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #fffafa;
+            background: url('https://i.pinimg.com/736x/49/95/11/499511f7c90d65095d2d9f0d43e1617e.jpg') no-repeat center center/cover; 
+        }
+
+        /* Header Section */
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: #000000;
+            color: white;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 80px;
+            margin-right: 10px;
+        }
+
+        .site-name {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 32px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        nav {
+            margin-left: auto;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Home Section */
+        .home {
+            text-align: center;
+            padding: 50px 20px;
+      
+        }
+
+        .home h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+            color: #ff0707;
+        }
+
+        .home p {
+            font-size: 18px;
+            color: #ffffff;
+            margin-bottom: 30px;
+        }
+        /* Footer Section */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #3c3c3c;
+            color: rgb(255, 255, 255);
+            margin-top: 30px;
+        }
+        .container {
+    margin: 100px 0 0 200px;
+    width: 75%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.container img {
+    width: 20%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    transition: transform 0.5s ease-in-out, width 0.5s ease-in-out;
+}
+
+.container img:hover {
+    width: 25%;
+    transform: scale(1.1);
+} 
+.about {
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #757575;
+            box-shadow: 0 4px 6px rgba(67, 67, 67, 0.1);
+            border-radius: 10px;
+            max-width: 800px;
+            line-height: 1.6;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="log.jpg" alt="Logo" class="logo">
+            <div class="site-name">ZEN PLUS </div>
+        </div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="cart.html">cart</a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <div class="home" id="home">
+        <h1>Welcome to Zen plus helmets</h1>
+        <p>Your one-stop shop for premium helmets. Ride safe, ride in style! Your Safety, Our Priority</p>
+            <div class="section" id="images">
+                <h1>Explore Helmet Designs</h1>
+                
+                    
+                    
+                    
+                    
+                    
+            <div class="container">
+                <img src="red helmet.jpg" alt="red helmet" id="click1">
+                <img src="black.jpg" alt="Helmet 2" id="click2">
+                <img src="orangehelmet.jpg" alt="Helmet 3" id="click3">
+                <img src="white.jpg" alt="Helmet 4" id="click4">
+            </div>
+    </div>
+    <div class="section" id="about">
+        <h1>About Us</h1>
+        <div class="about">
+            <p>Zen Plus Helmet is your one-stop destination for designing helmets that reflect your personality and style. 
+            With a variety of colors and designs to choose from, we ensure you ride safely and in style. Our platform offers 
+            an easy-to-use interface for customization, allowing you to create a helmet that’s uniquely yours.</p>
+
+            <p>Our mission is to combine safety and aesthetics, providing customers with high-quality helmets that meet 
+            international safety standards. Join us in revolutionizing the way you think about helmet designs!</p>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Zen Plus. All Rights Reserved.</p>
+        <p>Contact Us: <a href="mail to:shieldstyle330@gmail.com">info@ZenPlus330.com</a></p>
+        <p>Follow Us:
+        <a href="#" target="_blank"><img src="facebook.png" alt="Facebook"  width="40" height="40"></a>
+        <a href="#" target="_blank"><img src="x.png" alt="Twitter"  width="40" height="40"></a>
+        <a href="#" target="_blank"><img src="insta.jpg" alt="Instagram" width="40" height="40"></a>
+       </p>
+</div>
+
+
+    </footer>
+
+</body>
+<script>
+
+document.getElementById("click1").onclick = function() {
+  window.location.href = "helmetred.html";
+};
+
+document.getElementById("click2").onclick = function() {
+  window.location.href = "helmetblack.html";
+};
+
+document.getElementById("click3").onclick = function() {
+  window.location.href = "helmetorange.html";
+};
+
+document.getElementById("click4").onclick = function() {
+  window.location.href = "helmetblack2.html";
+};
+</script>
+</html>
